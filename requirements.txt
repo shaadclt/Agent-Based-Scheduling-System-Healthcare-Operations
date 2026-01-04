@@ -1,0 +1,9 @@
+llama-index
+llama-index-llms-groq
+llama-index-embeddings-huggingface
+llama-index-readers-json
+llama-index-utils-workflow
+nest-asyncio
+python-dotenv
+fastapi
+uvicorn
