@@ -37,6 +37,8 @@ User Input → PrepEvent → InputEvent → LLM Processing → ToolCallEvent →
                 └──────────────────────────────────────────────┘
 ```
 
+In addition to the core workflow, the system includes structured agent traces and evaluation hooks. Each agent run logs intent detection, tool selection, execution outcomes, and termination reasons, enabling observability and debuggability without exposing chain-of-thought.
+
 ## Project Structure
 
 The project is organized as a modular, production-style codebase, with a notebook
