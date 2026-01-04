@@ -37,6 +37,37 @@ User Input → PrepEvent → InputEvent → LLM Processing → ToolCallEvent →
                 └──────────────────────────────────────────────┘
 ```
 
+## Project Structure
+
+The project is organized as a modular, production-style codebase, with a notebook
+retained for demonstration purposes.
+
+```text
+agent_scheduling_system/
+│
+├── app/
+│   ├── api.py          # FastAPI service exposing the agent
+│   ├── agent.py        # Agent assembly and wiring
+│   ├── workflow.py     # Event-driven agent workflow (core logic)
+│   ├── tools.py        # LLM-callable tools (search, scheduling)
+│   ├── memory.py       # Conversation memory management
+│   ├── traces.py       # Structured agent tracing and observability
+│   ├── evaluation.py   # Agent evaluation metrics
+│   └── config.py       # LLM and embedding configuration
+│
+├── data/
+│   └── doctors.json    # Sample doctor database
+│
+├── notebooks/
+│   └── scheduling_demo.ipynb  # Interactive demo and exploration
+│
+├── Dockerfile
+├── requirements.txt
+├── LICENSE.txt
+├── .dockerignore
+└── .env.example
+```
+
 ### Agent Workflow
 
 The scheduling agent follows an event-driven workflow using LlamaIndex
