@@ -35,6 +35,24 @@ User Input → PrepEvent → InputEvent → LLM Processing → ToolCallEvent →
                 └──────────────────────────────────────────────┘
 ```
 
+### Agent Workflow
+
+The scheduling agent follows an event-driven workflow using LlamaIndex
+workflows and the ReAct (Reasoning + Acting) pattern.
+
+- User input enters through a StartEvent and is normalized in a PrepEvent
+- Conversation history is reconstructed to maintain multi-turn context
+- The LLM reasons over the structured input and decides whether to:
+  - respond directly, or
+  - invoke scheduling/search tools
+- Tool results are fed back into the workflow, enabling iterative reasoning
+- The process terminates deterministically via a StopEvent
+
+This design ensures controlled tool usage, clear reasoning boundaries,
+and safe agent execution.
+
+<img width="1849" height="866" alt="Scheduling agent workflow" src="https://github.com/user-attachments/assets/0cdc2308-5c07-4a79-9d9f-a48ba9920ff9" />
+
 ## Prerequisites
 
 - Python 3.8+
