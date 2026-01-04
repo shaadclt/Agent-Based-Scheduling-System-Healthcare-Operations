@@ -10,6 +10,10 @@ This project implements a conversational AI agent that helps patients:
 - Schedule appointments with selected doctors
 - Maintain conversation context across multiple interactions
 
+## Why This Project
+
+Manual scheduling in healthcare and service-based industries is time-consuming,error-prone, and difficult to scale. This project demonstrates how agent-basedsystems can automate scheduling workflows by combining semantic search, reasoning, and tool execution in a controlled pipeline.
+
 ## Features
 
 - **Semantic Search**: Uses vector embeddings to search doctors by specialty or disease
