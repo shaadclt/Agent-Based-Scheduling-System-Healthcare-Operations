@@ -14,7 +14,7 @@ This project implements a conversational AI agent that helps patients:
 
 ## Why This Project
 
-Manual scheduling in healthcare and service-based industries is time-consuming, error-prone, and difficult to scale. This project demonstrates how agent-based systems can automate scheduling workflows by combining semantic search, reasoning, and tool execution in a controlled pipeline.
+Manual scheduling in healthcare and service-based industries is time-consuming, error-prone, and difficult to scale. This project demonstrates how agent-based systems can automate scheduling workflows with controlled tool execution and observability by combining semantic search, reasoning, and tool execution in a controlled pipeline.
 
 ## Features
 
@@ -116,9 +116,9 @@ and safe agent execution.
 ## Prerequisites
 
 - Python 3.8+
-- Google Colab (recommended) or Jupyter Notebook
+- Jupyter Notebook (for demo)
+- Docker (optional, for deployment)
 - Groq API Key
-- Required Python packages (see Installation)
 
 ## Installation
 
@@ -236,6 +236,8 @@ splitter = SentenceSplitter(chunk_size=200)
   - Patient Name
   - Doctor Name
   - Scheduling Comments
+
+The CSV file represents a persistent side effect of agent actions and serves as a lightweight stand-in for a database or external scheduling system.
 
 ### Example Flow
 
