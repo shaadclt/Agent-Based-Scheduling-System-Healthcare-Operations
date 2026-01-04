@@ -119,6 +119,15 @@ print(response.get("response"))
 - Synthesizes final response
 - Maintains conversation memory
 
+### Scheduling Decision Logic
+
+The agent:
+1. Identifies intent (search vs scheduling)
+2. Resolves specialty constraints
+3. Extracts patient and timing preferences
+4. Selects learned tools via ReAct reasoning
+5. Confirms or gracefully fails if constraints cannot be met
+
 ## Configuration
 
 ### LLM Settings
