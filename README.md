@@ -12,7 +12,7 @@ This project implements a conversational AI agent that helps patients:
 
 ## Why This Project
 
-Manual scheduling in healthcare and service-based industries is time-consuming,error-prone, and difficult to scale. This project demonstrates how agent-basedsystems can automate scheduling workflows by combining semantic search, reasoning, and tool execution in a controlled pipeline.
+Manual scheduling in healthcare and service-based industries is time-consuming,error-prone, and difficult to scale. This project demonstrates how agent-based systems can automate scheduling workflows by combining semantic search, reasoning, and tool execution in a controlled pipeline.
 
 ## Features
 
