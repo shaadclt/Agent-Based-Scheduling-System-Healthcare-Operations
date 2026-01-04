@@ -1,4 +1,4 @@
-# Doctor Scheduling Agent 🏥
+# Agent-Based Scheduling System for Healthcare Operations 🏥
 
 An intelligent agent-based system for searching doctors by specialty and scheduling appointments using LlamaIndex workflows and ReAct (Reasoning + Acting) pattern.
 
