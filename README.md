@@ -10,9 +10,11 @@ This project implements a conversational AI agent that helps patients:
 - Schedule appointments with selected doctors
 - Maintain conversation context across multiple interactions
 
+**Tech Stack:** LlamaIndex, Groq (LLaMA-3.3-70B), HuggingFace Embeddings, Python, Async Workflows
+
 ## Why This Project
 
-Manual scheduling in healthcare and service-based industries is time-consuming,error-prone, and difficult to scale. This project demonstrates how agent-based systems can automate scheduling workflows by combining semantic search, reasoning, and tool execution in a controlled pipeline.
+Manual scheduling in healthcare and service-based industries is time-consuming, error-prone, and difficult to scale. This project demonstrates how agent-based systems can automate scheduling workflows by combining semantic search, reasoning, and tool execution in a controlled pipeline.
 
 ## Features
 
