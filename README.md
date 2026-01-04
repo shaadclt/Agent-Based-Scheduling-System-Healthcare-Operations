@@ -258,6 +258,34 @@ The agent is exposed via a FastAPI service.
 uvicorn app.api:app --reload
 ```
 
+### Example Request
+```http
+POST /run
+{
+  "query": "Find a neurologist and schedule an appointment"
+}
+```
+
+### Example Response
+```json
+{
+  "output": "Appointment request recorded for ...",
+  "traces": [
+    { "step": "INTENT_DETECTED", "detail": "SCHEDULE_APPOINTMENT" },
+    { "step": "TOOL_SELECTED", "detail": "schedule_appointment_tool" }
+  ]
+}
+```
+
+## Running with Docker
+
+The API can be run as a containerized service.
+
+```bash
+docker build -t scheduling-agent-api .
+docker run -p 8000:8000 --env-file .env scheduling-agent-api
+```
+
 ## Error Handling
 
 The agent includes robust error handling:
