@@ -100,6 +100,7 @@ response = await scheduling_agent.run(
 print(response.get("response"))
 ```
 
+
 ## How It Works
 
 ### 1. Document Processing
@@ -157,6 +158,17 @@ splitter = SentenceSplitter(chunk_size=200)
   - Patient Name
   - Doctor Name
   - Scheduling Comments
+
+### Example Flow
+
+User: "Find a neurologist and schedule an appointment next week"
+
+Agent reasoning:
+- Identifies specialty = Neurology
+- Uses semantic search to retrieve matching doctors
+- Selects scheduling tool
+- Writes appointment request to CSV
+- Responds with confirmation summary
 
 ## Error Handling
 
