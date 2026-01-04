@@ -138,7 +138,7 @@ pip install llama-index-utils-workflow
    - In Google Colab, store it as a secret named `GROQ_API_KEY`
 
 2. **Prepare Data Files**
-   - `Doctors database.json`: JSON file containing doctor information
+   - `doctors.json`: JSON file containing doctor information
      ```json
      [
        {
@@ -151,7 +151,7 @@ pip install llama-index-utils-workflow
      ```
 
 3. **Upload Required Files**
-   - Upload `Doctors database.json` to your Colab environment
+   - Upload `doctors.json` to your Colab environment
    - The system will create `Doctor appointment requests.csv` automatically
 
 ## Usage
@@ -247,6 +247,16 @@ Agent reasoning:
 - Selects scheduling tool
 - Writes appointment request to CSV
 - Responds with confirmation summary
+
+## API Usage
+
+The agent is exposed via a FastAPI service.
+
+### Run Locally
+
+```bash
+uvicorn app.api:app --reload
+```
 
 ## Error Handling
 
