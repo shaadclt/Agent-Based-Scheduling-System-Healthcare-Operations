@@ -1,6 +1,6 @@
 # Agent-Based Scheduling System for Healthcare Operations 🏥
 
-An intelligent agent-based system for searching doctors by specialty and scheduling appointments using LlamaIndex workflows and ReAct (Reasoning + Acting) pattern.
+An agent-based scheduling system that uses LlamaIndex workflows and the ReAct pattern to automate doctor discovery and appointment coordination through structured reasoning and tool execution.
 
 ## Overview
 
