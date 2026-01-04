@@ -49,6 +49,20 @@ The agent emits structured traces for each execution, including:
 
 These traces improve transparency, debugging, and evaluation, and are returned as part of the API response.
 
+## Evaluation Metrics
+
+Since this is an agentic system, evaluation focuses on decision quality and behavior rather than text similarity alone.
+
+Tracked metrics include:
+- **Intent Accuracy**: Correct identification of user intent
+- **Tool Selection Accuracy**: Correct choice of tools for a given intent
+- **Task Completion Rate**: Successful end-to-end task execution
+- **Invalid Action Rate**: Attempts to perform unsupported actions
+- **Latency**: End-to-end response time
+
+These metrics are collected via lightweight evaluation hooks during agent execution.
+
+
 ## Project Structure
 
 The project is organized as a modular, production-style codebase, with a notebook
